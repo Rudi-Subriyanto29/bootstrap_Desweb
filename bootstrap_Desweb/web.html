@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tugas1 Rudi Subriyanto</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Ubah warna latar belakang */
+        }
+        .rudi {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #1e3fe1d9;
+            color: white;
+            padding: 10px 20px;
+        }
+        .bkanan, .bkiri {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        .bkanan li a, .bkiri li a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .bkanan li a:hover, .bkiri li a:hover {
+            color: #000000be;
+        }
+        .judul-list {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .atur {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .list-berita {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .atur-berita {
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+        }
+        .atur-berita h3 {
+            font-size: 18px;
+        }
+        .atur-berita p {
+            color: #666;
+        }
+        .agenda-list {
+            flex: 1;
+            margin-top: 20px;
+        }
+        .agenda-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        .agenda-items li {
+            margin-bottom: 10px;
+        }
+        /* Gaya untuk footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #1e3fe1d9;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="rudi">
+        <ul class="bkanan">
+            <li><a href="#"><c>Menu</c></a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+        <ul class="bkiri">
+            <li><a href="#"><c>Sign up</c></a></li>
+            <li><a href="#">Log in</a></li>
+        </ul>
+    </nav>
+    <h2 class="judul-list">Hot News</h2>
+    <div class="atur">
+        <div class="list-berita">
+            <div class="atur-berita">
+                <h3 class="judul-berita">Headline 1</h3>
+                <p class="deskripsi-berita">deskripsi singkat berita</p>
+            </div>
+            <div class="atur-berita">
+                <h3 class="judul-berita">Headline 2</h3>
+                <p class="deskripsi-berita">deskripsi singkat berita</p>
+            </div>
+            <div class="atur-berita">
+                <h3 class="judul-berita">Headline 3</h3>
+                <p class="deskripsi-berita">deskripsi singkat berita</p>
+            </div>
+            <div class="atur-berita">
+                <h3 class="judul-berita">Headline 4</h3>
+                <p class="deskripsi-berita">deskripsi singkat berita</p>
+            </div>
+        </div>
+        <div class="agenda-list">
+            <ul class="agenda-items">
+                <li>Berita 1 - Tanggal 1</li>
+                <li>Berita 2 - Tanggal 2</li>
+                <li>Berita 3 - Tanggal 3</li>
+                <li>Berita 4 - Tanggal 4</li>
+                <li>Berita 5 - Tanggal 5</li>
+                <li>Berita 6 - Tanggal 6</li>
+                <li>Berita 7 - Tanggal 7</li>
+                <li>Berita 8 - Tanggal 8</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Rudi Subriyanto. All rights reserved.</p>
+    </footer>
+</body>
+</html>
